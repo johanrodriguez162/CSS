@@ -1,26 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Redaction+50:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+    --color-encabezado: rgb(240, 14, 93);
+    --color-primario: rgb(10, 185, 220);
+    --color-terciario: rgb(0, 0, 0);
+    --color-botan-compra: rgb(1, 131, 1);
+    --espacio-pequeno: 8px;
+    --espacio-mediano: 16px;
+    --espacio-grande: 24px;
+}
 
 body {
-  font-family: sans-serif;
-  color: #2d3748;
+    font-family: "Redaction", sans-serif, serif;
+    color: var(--color-primario);
+}
+
+main section {
+    display: flex;
+    flex-direction: column;
+    gap: var(--espacio-grande);
+}
+
+main article {
+    border: 2px solid var(--color-primario); 
+    border-radius: 12px; 
+    padding: var(--espacio-mediano);
+    width: 100%; 
+}
+
+/* Encabezados y Secciones */
+h2 {
+    color: var(--color-primario);
+}
+
+header {
+    background-image: url(descarga.jpeg);
+    background-position: center;
+    margin: var(--espacio-grande);
+    padding: var(--espacio-mediano);
+    color: var(--color-encabezado);
 }
 
 header nav ul li a {
-  color: #3182ce;
+    color: var(--color-encabezado);
+}
+
+main {
+    color: var(--color-terciario);
+    margin: var(--espacio-grande);
+    padding: var(--espacio-mediano);
+}
+
+aside {
+    color: var(--color-primario);
+    margin: var(--espacio-grande);
+    padding: var(--espacio-mediano);
 }
 
 aside ul li a {
-  color: #2f855a;
+    color: var(--color-terciario);
+}
+
+footer {
+    color: var(--color-primario);
+    margin: var(--espacio-grande);
+    padding: var(--espacio-mediano);
 }
 
 footer ul li a {
-  color: #718096;
+    color: var(--color-terciario);
 }
 
+/* Botones */
 .btn-comprar {
-  color: green;
-  /* 10 pts */
+    color: var(--color-botan-compra);
 }
 
 .destacado {
-  color: orange;
+    color: var(--color-botan-compra);
 }
