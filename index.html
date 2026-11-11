@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
-
+ 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Catálogo Deportivo - ADSO</title>
   <link rel="stylesheet" href="style.css">
 </head>
-
+ 
 <body>
-
+ 
   <header>
     <nav>
       <ul>
@@ -19,52 +19,52 @@
       </ul>
     </nav>
   </header>
-
+ 
   <main>
     <section>
-
+ 
       <!-- Producto 1 -->
       <article>
         <h2>Guayos Pro</h2>
         <p>Zapatillas de alta gama para césped sintético.</p>
         <p class="precio">$ 180.000</p>
-        <a href="#" class="btn-comprar">Comprar</a>
+        <button type="button" class="btn-comprar">Comprar</button>
       </article>
-
+ 
       <article>
         <h2>Balón Oficial</h2>
         <p>Balón certificado para torneos oficiales de fútbol.</p>
         <p class="precio">$ 95.000</p>
-        <a href="#" class="btn-comprar destacado" id="btn-destacado">Comprar</a>
+        <button type="button" class="btn-comprar destacado" id="btn-destacado">Comprar</button>
       </article>
-
+ 
       <article>
         <h2>Espinilleras</h2>
         <p>Protección ultraligera de alta resistencia.</p>
         <p class="precio">$ 35.000</p>
-        <a href="#" class="btn-comprar">Comprar</a>
+        <button type="button" class="btn-comprar">Comprar</button>
       </article>
-
+ 
       <article>
         <h2>Camiseta Local</h2>
         <p>Tela transpirable con tecnología dry-fit.</p>
         <p class="precio">$ 70.000</p>
-        <a href="#" class="btn-comprar">Comprar</a>
+        <button type="button" class="btn-comprar">Comprar</button>
       </article>
-
+ 
     </section>
   </main>
-
+ 
   <aside>
     <h2>Categorías</h2>
     <ul>
-      <li><a href="#">Calzado</a></li>
-      <li><a href="#">Balones</a></li>
-      <li><a href="#">Accesorios</a></li>
-      <li><a href="#">Indumentaria</a></li>
+      <li><button type="button">Calzado</button></li>
+      <li><button type="button">Balones</button></li>
+      <li><button type="button">Accesorios</button></li>
+      <li><button type="button">Indumentaria</button></li>
     </ul>
   </aside>
-
+ 
   <footer>
     <p>&copy; 2026 Catálogo ADSO. Todos los derechos reservados.</p>
     <ul>
@@ -73,7 +73,16 @@
       <li><a href="#">Twitter</a></li>
     </ul>
   </footer>
-
+ 
+  <!-- Evita que los enlaces con href="#" te suban al inicio de la página -->
+  <script>
+    document.querySelectorAll('a[href="#"]').forEach(function (enlace) {
+      enlace.addEventListener('click', function (evento) {
+        evento.preventDefault();
+      });
+    });
+  </script>
+ 
 </body>
-
+ 
 </html>
