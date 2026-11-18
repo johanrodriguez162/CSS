@@ -1,0 +1,18 @@
+.sidebar {
+    color: var(--color-primario);
+    margin: var(--espacio-grande);
+    padding: var(--espacio-mediano);
+}
+
+.sidebar__title {
+    color: var(--color-primario);
+}
+
+.sidebar__list {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar__item {
+    margin-bottom: var(--espacio-pequeno);
+}

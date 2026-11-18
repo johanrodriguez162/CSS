@@ -1,0 +1,11 @@
+.catalog {
+    color: var(--color-terciario);
+    margin: var(--espacio-grande);
+    padding: var(--espacio-mediano);
+}
+
+.catalog__list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--espacio-grande);
+}

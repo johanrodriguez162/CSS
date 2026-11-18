@@ -1,0 +1,9 @@
+.footer {
+    color: var(--color-primario);
+    margin: var(--espacio-grande);
+    padding: var(--espacio-mediano);
+}
+
+.footer__link {
+    color: var(--color-terciario);
+}

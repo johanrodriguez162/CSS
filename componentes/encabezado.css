@@ -1,0 +1,11 @@
+.header {
+    background-image: url(../descarga.jpeg);
+    background-position: center;
+    margin: var(--espacio-grande);
+    padding: var(--espacio-mediano);
+    color: var(--color-encabezado);
+}
+
+.header__link {
+    color: var(--color-encabezado);
+}

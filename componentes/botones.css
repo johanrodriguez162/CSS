@@ -1,0 +1,64 @@
+.btn {
+    display: inline-block;
+    padding: var(--espacio-pequeno) var(--espacio-mediano);
+    background-color: var(--color-botan-compra);
+    color: var(--color-texto-claro);
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.btn:hover {
+    background-color: var(--color-terciario);
+}
+
+.btn:active {
+    transform: translateY(2px) scale(0.97);
+    box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.4);
+}  
+
+.btn:focus {
+    outline: 3px solid var(--color-secundario);
+    outline-offset: 2px;
+}
+
+/* Modificador: botón destacado (antes .destacado) */
+.btn--destacado {
+    background-color: var(--color-encabezado);
+}
+
+/* Modificador: botón secundario (contorneado, ancho completo; usado en categorías) */
+.btn--secundario {
+    display: block;
+    width: 100%;
+    background-color: transparent;
+    color: var(--color-terciario);
+    border: 2px solid var(--color-primario);
+    border-radius: 0;
+    text-align: left;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn--secundario::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: var(--espacio-pequeno);
+    background-color: var(--color-secundario);
+}
+
+/* Estos van DESPUÉS de .btn:hover / .btn:active para ganar por orden (mismo peso) */
+.btn--secundario:hover {
+    background-color: var(--color-terciario);
+    color: var(--color-primario);
+}
+
+.btn--secundario:active {
+    transform: translateY(2px) scale(0.98);
+    box-shadow: none;
+}

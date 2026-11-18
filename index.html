@@ -1,80 +1,78 @@
 <!DOCTYPE html>
 <html lang="es">
- 
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Catálogo Deportivo - ADSO</title>
   <link rel="stylesheet" href="style.css">
 </head>
- 
+
 <body>
- 
-  <header>
+
+  <header class="header">
     <nav>
       <ul>
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Catálogo</a></li>
-        <li><a href="#">Contacto</a></li>
+        <li><a class="header__link" href="#">Inicio</a></li>
+        <li><a class="header__link" href="#">Catálogo</a></li>
+        <li><a class="header__link" href="#">Contacto</a></li>
       </ul>
     </nav>
   </header>
- 
-  <main>
-    <section>
- 
-      <!-- Producto 1 -->
-      <article>
-        <h2>Guayos Pro</h2>
-        <p>Zapatillas de alta gama para césped sintético.</p>
-        <p class="precio">$ 180.000</p>
-        <button type="button" class="btn-comprar">Comprar</button>
+
+  <main class="catalog">
+    <section class="catalog__list">
+
+      <article class="card">
+        <h2 class="card__title">Guayos Pro</h2>
+        <p class="card__description">Zapatillas de alta gama para césped sintético.</p>
+        <p class="card__price">$ 180.000</p>
+        <button type="button" class="btn">Comprar</button>
       </article>
- 
-      <article>
-        <h2>Balón Oficial</h2>
-        <p>Balón certificado para torneos oficiales de fútbol.</p>
-        <p class="precio">$ 95.000</p>
-        <button type="button" class="btn-comprar destacado" id="btn-destacado">Comprar</button>
+
+      <article class="card card--destacada">
+        <h2 class="card__title">Balón Oficial</h2>
+        <p class="card__description">Balón certificado para torneos oficiales de fútbol.</p>
+        <p class="card__price">$ 95.000</p>
+        <button type="button" class="btn btn--destacado">Comprar</button>
       </article>
- 
-      <article>
-        <h2>Espinilleras</h2>
-        <p>Protección ultraligera de alta resistencia.</p>
-        <p class="precio">$ 35.000</p>
-        <button type="button" class="btn-comprar">Comprar</button>
+
+      <article class="card">
+        <h2 class="card__title">Espinilleras</h2>
+        <p class="card__description">Protección ultraligera de alta resistencia.</p>
+        <p class="card__price">$ 35.000</p>
+        <button type="button" class="btn">Comprar</button>
       </article>
- 
-      <article>
-        <h2>Camiseta Local</h2>
-        <p>Tela transpirable con tecnología dry-fit.</p>
-        <p class="precio">$ 70.000</p>
-        <button type="button" class="btn-comprar">Comprar</button>
+
+      <article class="card">
+        <h2 class="card__title">Camiseta Local</h2>
+        <p class="card__description">Tela transpirable con tecnología dry-fit.</p>
+        <p class="card__price">$ 70.000</p>
+        <button type="button" class="btn">Comprar</button>
       </article>
- 
+
     </section>
   </main>
- 
-  <aside>
-    <h2>Categorías</h2>
-    <ul>
-      <li><button type="button">Calzado</button></li>
-      <li><button type="button">Balones</button></li>
-      <li><button type="button">Accesorios</button></li>
-      <li><button type="button">Indumentaria</button></li>
+
+  <aside class="sidebar">
+    <h2 class="sidebar__title">Categorías</h2>
+    <ul class="sidebar__list">
+      <li class="sidebar__item"><button type="button" class="btn btn--secundario">Calzado</button></li>
+      <li class="sidebar__item"><button type="button" class="btn btn--secundario">Balones</button></li>
+      <li class="sidebar__item"><button type="button" class="btn btn--secundario">Accesorios</button></li>
+      <li class="sidebar__item"><button type="button" class="btn btn--secundario">Indumentaria</button></li>
     </ul>
   </aside>
- 
-  <footer>
+
+  <footer class="footer">
     <p>&copy; 2026 Catálogo ADSO. Todos los derechos reservados.</p>
     <ul>
-      <li><a href="#">Instagram</a></li>
-      <li><a href="#">Facebook</a></li>
-      <li><a href="#">Twitter</a></li>
+      <li><a class="footer__link" href="#">Instagram</a></li>
+      <li><a class="footer__link" href="#">Facebook</a></li>
+      <li><a class="footer__link" href="#">Twitter</a></li>
     </ul>
   </footer>
- 
-  <!-- Evita que los enlaces con href="#" te suban al inicio de la página -->
+
   <script>
     document.querySelectorAll('a[href="#"]').forEach(function (enlace) {
       enlace.addEventListener('click', function (evento) {
@@ -82,7 +80,7 @@
       });
     });
   </script>
- 
+
 </body>
- 
+
 </html>
