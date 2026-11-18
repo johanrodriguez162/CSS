@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Redaction+50:ital,wght@0,400;0,700;1,400&display=swap');
-@import url('css/tarjeta.css');
-@import url('css/botones.css');
-@import url('css/menu-lateral.css');
-@import url('css/encabezado.css');
-@import url('css/catalogo.css');
-@import url('css/pie.css');
+@import url('components/card.css');
+@import url('components/buttons.css');
+@import url('components/template/header.css');
+@import url('components/template/catalog.css');
+@import url('components/template/sidebar.css');
+@import url('components/template/footer.css');
 
 :root {
     --color-encabezado: rgb(240, 14, 93);

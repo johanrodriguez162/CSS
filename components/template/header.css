@@ -1,5 +1,5 @@
 .header {
-    background-image: url(../descarga.jpeg);
+    background-image: url(../../descarga.jpeg);
     background-position: center;
     margin: var(--espacio-grande);
     padding: var(--espacio-mediano);
