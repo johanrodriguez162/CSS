@@ -10,68 +10,93 @@
 
 <body>
 
-  <header class="header">
-    <nav>
-      <ul>
-        <li><a class="header__link" href="#">Inicio</a></li>
-        <li><a class="header__link" href="#">Catálogo</a></li>
-        <li><a class="header__link" href="#">Contacto</a></li>
+  <div class="app-layout">
+
+    <header class="header">
+      <a class="header__logo" href="#">Catálogo ADSO</a>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li><a class="header__link" href="#">Inicio</a></li>
+          <li><a class="header__link" href="#">Catálogo</a></li>
+          <li><a class="header__link" href="#">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="main-wrapper">
+
+      <main class="catalog">
+        <section class="catalog__list">
+
+          <div class="catalog__item">
+            <article class="card">
+              <h2 class="card__title">Guayos Pro</h2>
+              <p class="card__description">Zapatillas de alta gama para césped sintético.</p>
+              <div class="card__price-wrapper">
+                <p class="card__price">$ 180.000 COP</p>
+              </div>
+              <button type="button" class="btn card__button">Comprar</button>
+            </article>
+          </div>
+
+          <div class="catalog__item">
+            <article class="card card--destacada">
+              <h2 class="card__title">Balón Oficial</h2>
+              <p class="card__description">Balón certificado para torneos oficiales de fútbol, con costuras reforzadas y homologación para competencias profesionales.</p>
+              <div class="card__price-wrapper">
+                <p class="card__price">$ 95.000 COP</p>
+              </div>
+              <button type="button" class="btn btn--destacado card__button">Comprar</button>
+            </article>
+          </div>
+
+          <div class="catalog__item">
+            <article class="card">
+              <h2 class="card__title">Espinilleras</h2>
+              <p class="card__description">Protección ultraligera de alta resistencia.</p>
+              <div class="card__price-wrapper">
+                <p class="card__price">$ 35.000 COP</p>
+              </div>
+              <button type="button" class="btn card__button">Comprar</button>
+            </article>
+          </div>
+
+          <div class="catalog__item">
+            <article class="card">
+              <h2 class="card__title">Camiseta Local</h2>
+              <p class="card__description">Tela transpirable con tecnología dry-fit.</p>
+              <div class="card__price-wrapper">
+                <p class="card__price">$ 70.000 COP</p>
+              </div>
+              <button type="button" class="btn card__button">Comprar</button>
+            </article>
+          </div>
+
+        </section>
+      </main>
+
+      <aside class="sidebar">
+        <h2 class="sidebar__title">Categorías</h2>
+        <ul class="sidebar__list">
+          <li class="sidebar__item"><button type="button" class="btn btn--secundario">Calzado</button></li>
+          <li class="sidebar__item"><button type="button" class="btn btn--secundario">Balones</button></li>
+          <li class="sidebar__item"><button type="button" class="btn btn--secundario">Accesorios</button></li>
+          <li class="sidebar__item"><button type="button" class="btn btn--secundario">Indumentaria</button></li>
+        </ul>
+      </aside>
+
+    </div>
+
+    <footer class="footer">
+      <p>&copy; 2026 Catálogo ADSO. Todos los derechos reservados.</p>
+      <ul class="footer__list">
+        <li><a class="footer__link" href="#">Instagram</a></li>
+        <li><a class="footer__link" href="#">Facebook</a></li>
+        <li><a class="footer__link" href="#">Twitter</a></li>
       </ul>
-    </nav>
-  </header>
+    </footer>
 
-  <main class="catalog">
-    <section class="catalog__list">
-
-      <article class="card">
-        <h2 class="card__title">Guayos Pro</h2>
-        <p class="card__description">Zapatillas de alta gama para césped sintético.</p>
-        <p class="card__price">$ 180.000</p>
-        <button type="button" class="btn">Comprar</button>
-      </article>
-
-      <article class="card card--destacada">
-        <h2 class="card__title">Balón Oficial</h2>
-        <p class="card__description">Balón certificado para torneos oficiales de fútbol.</p>
-        <p class="card__price">$ 95.000</p>
-        <button type="button" class="btn btn--destacado">Comprar</button>
-      </article>
-
-      <article class="card">
-        <h2 class="card__title">Espinilleras</h2>
-        <p class="card__description">Protección ultraligera de alta resistencia.</p>
-        <p class="card__price">$ 35.000</p>
-        <button type="button" class="btn">Comprar</button>
-      </article>
-
-      <article class="card">
-        <h2 class="card__title">Camiseta Local</h2>
-        <p class="card__description">Tela transpirable con tecnología dry-fit.</p>
-        <p class="card__price">$ 70.000</p>
-        <button type="button" class="btn">Comprar</button>
-      </article>
-
-    </section>
-  </main>
-
-  <aside class="sidebar">
-    <h2 class="sidebar__title">Categorías</h2>
-    <ul class="sidebar__list">
-      <li class="sidebar__item"><button type="button" class="btn btn--secundario">Calzado</button></li>
-      <li class="sidebar__item"><button type="button" class="btn btn--secundario">Balones</button></li>
-      <li class="sidebar__item"><button type="button" class="btn btn--secundario">Accesorios</button></li>
-      <li class="sidebar__item"><button type="button" class="btn btn--secundario">Indumentaria</button></li>
-    </ul>
-  </aside>
-
-  <footer class="footer">
-    <p>&copy; 2026 Catálogo ADSO. Todos los derechos reservados.</p>
-    <ul>
-      <li><a class="footer__link" href="#">Instagram</a></li>
-      <li><a class="footer__link" href="#">Facebook</a></li>
-      <li><a class="footer__link" href="#">Twitter</a></li>
-    </ul>
-  </footer>
+  </div>
 
   <script>
     document.querySelectorAll('a[href="#"]').forEach(function (enlace) {

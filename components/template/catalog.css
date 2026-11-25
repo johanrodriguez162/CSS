@@ -1,11 +1,21 @@
 .catalog {
+    flex: 3 1 400px;
+    min-width: 0;
     color: var(--color-terciario);
     margin: var(--espacio-grande);
     padding: var(--espacio-mediano);
 }
 
+/* Cuadrícula de tarjetas con Flexbox: se acomodan en filas y bajan de línea */
 .catalog__list {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: var(--espacio-grande);
+}
+
+.catalog__item {
+    flex: 1 1 170px;
+    max-width: 240px;
+    display: flex;
 }
